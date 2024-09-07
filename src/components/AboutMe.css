@@ -1,0 +1,53 @@
+/* About Me Section Styles */
+/* Initial state */
+.about-me {
+  background-color: #f4f4f9;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  margin-left: 33%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  opacity: 0;
+  transform: translateY(20px); /* Hidden initially */
+  transition: transform 1.2s ease, opacity 1.2s ease; /* Smooth transition */
+}
+
+.about-me h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 1.4s ease; /* Text transition */
+}
+
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0;
+  transition: opacity 1.6s ease; /* Paragraph transition */
+}
+
+/* Animation when the section is in view */
+.about-me.animate {
+  opacity: 1;
+  transform: translateY(0); /* Slide in */
+}
+
+.about-me.animate h2,
+.about-me.animate p {
+  opacity: 1; /* Text appears after section slides in */
+}
+
+/* Hover effect */
+.about-me:hover {
+  transform: scale(1.05); /* Subtle zoom on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}

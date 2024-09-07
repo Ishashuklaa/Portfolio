@@ -1,0 +1,93 @@
+/* Soft Skills Section Styles */
+.skills-section {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* Soft Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content */
+  align-items: center; /* Vertically center */
+  gap: 40px; /* Spacing between skills */
+  width: 100%;
+  max-width: 1000px; /* Limit the width for better presentation */
+  margin: 0 auto;
+}
+
+/* Skill item with icon and label */
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Start below */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.skill-item.in-view {
+  opacity: 1;
+  transform: translateY(0); /* Slide in when in view */
+}
+
+.skill-icon {
+  font-size: 48px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  text-transform: capitalize;
+}
+
+/* Animation for scrolling */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .skills-container {
+    gap: 30px;
+  }
+
+  .skill-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill-item {
+    margin-bottom: 15px;
+  }
+
+  .skill-icon {
+    font-size: 40px;
+  }
+
+  .skill-name {
+    font-size: 18px;
+  }
+}

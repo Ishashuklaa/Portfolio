@@ -1,0 +1,60 @@
+/* Contact Me Section Styles */
+.contact-me {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  opacity: 1; /* Initially hidden */
+  transform: translateY(20px); /* Position it below */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  /* height: 300px;
+  width: 500px;
+  
+  margin-left: 30%;
+  margin-bottom: 5%;
+  border: 2px solid black; */
+}
+
+.contact-me.show {
+  opacity: 1; /* Fade in */
+  transform: translateY(0); /* Move to original position */
+}
+
+.contact-me h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.contact-me p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-info a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #0056b3;
+}
+
+.contact-info svg {
+  font-size: 20px;
+  color: #007BFF;
+  transition: transform 0.3s ease;
+}
+
+.contact-info a:hover svg {
+  transform: scale(1.2);
+}

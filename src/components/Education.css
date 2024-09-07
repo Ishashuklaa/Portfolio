@@ -1,0 +1,45 @@
+.education-section {
+    padding: 40px 0;
+    background-color: #eef1e6;
+    text-align: center;
+  }
+  
+  .education-section h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #2a2a2a;
+  }
+  
+  .education-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .education-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .education-item p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a2a2a;
+  }
+  
+  .education-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .education-item:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+  }
+  
